@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.adminScreen">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="378.0" prefWidth="579.0" style="-fx-background-color: linear-gradient(to right top, #12ebd8, #00bacc, #cc0000, #00bacc, #12ebd8);">
+         <children>
+            <Text fill="WHITE" layoutX="195.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Screen">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Text>
+            <HBox layoutX="116.0" layoutY="139.0" prefHeight="45.0" prefWidth="348.0">
+               <children>
+                  <Button fx:id="productDetail" mnemonicParsing="false" onAction="#showProductDetail" prefHeight="25.0" prefWidth="98.0" text="Product">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="customerDetail" mnemonicParsing="false" onAction="#showCustomerDetail" prefHeight="25.0" prefWidth="90.0" text="Customer">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="orderProduct" mnemonicParsing="false" onAction="#pushOrderProduct" text="Order Product">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Text fill="#e1dede" layoutX="200.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick The Trends You'd Like To See" />
+            <Button fx:id="backButton" layoutX="14.0" layoutY="19.0" mnemonicParsing="false" onAction="#pushBack" text="&lt;---" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

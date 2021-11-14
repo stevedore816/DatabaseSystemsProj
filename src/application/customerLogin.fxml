@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.customerLogin">
+   <children>
+      <AnchorPane layoutX="11.0" layoutY="11.0" prefHeight="378.0" prefWidth="577.0" style="-fx-background-color: linear-gradient(to right top, #12ebd8, #00bacc, #cc0000, #00bacc, #12ebd8);">
+         <children>
+            <HBox layoutX="200.0" layoutY="261.0" prefHeight="33.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#pushLogin" prefHeight="57.0" prefWidth="62.0" text="Login" />
+                  <Button fx:id="registerButton" mnemonicParsing="false" onAction="#pushRegister" prefHeight="47.0" prefWidth="65.0" text="Register">
+                     <HBox.margin>
+                        <Insets left="60.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <TextField fx:id="customerID" layoutX="226.0" layoutY="128.0" />
+            <TextField fx:id="customerName" layoutX="226.0" layoutY="188.0" />
+            <Text layoutX="153.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="customerID" />
+            <Text layoutX="174.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="fName" />
+            <Text fill="#e8e5e5" layoutX="213.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Login">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <HBox layoutX="14.0" layoutY="14.0" prefHeight="33.0" prefWidth="61.0">
+               <children>
+                  <Button fx:id="backButton" mnemonicParsing="false" onAction="#pushBackButton" text="&lt;----" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
